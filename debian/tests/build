@@ -1,0 +1,31 @@
+#!/bin/sh
+# autopkgtest check: Build and run a program against libfreeaptx, to verify that
+# the headers and pkg-config file are installed correctly
+
+set -e
+
+if [ -n "${DEB_HOST_GNU_TYPE:-}" ]; then
+    CROSS_COMPILE="$DEB_HOST_GNU_TYPE-"
+else
+    CROSS_COMPILE=
+fi
+
+cat <<EOF > libfreeaptx_test.c
+#include "freeaptx.h"
+
+int main(void)
+{
+  struct aptx_context *dec;
+  dec = aptx_init(0);
+  return 0;
+}
+EOF
+
+# deliberately word-splitting pkg-config output:
+# shellcheck disable=SC2046
+"${CROSS_COMPILE}gcc" -o libfreeaptx_test libfreeaptx_test.c \
+$("${CROSS_COMPILE}pkg-config" --cflags --libs libfreeaptx)
+echo "build: OK"
+[ -x libfreeaptx_test ]
+./libfreeaptx_test
+echo "run: OK"

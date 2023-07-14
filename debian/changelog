@@ -1,5 +1,13 @@
-template-repository (1.0-1) unstable; urgency=medium
+libfreeaptx (0.1.1-2) unstable; urgency=medium
 
-  * Initial release
+  [ Sebastien Bacher ]
+  * debian/tests:
+    - include build, encore and decode autopkgtests (Closes: #1011352)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Kentaro Hayashi <kenhys@xdump.org>  Wed, 25 May 2022 10:15:48 +0900
+
+libfreeaptx (0.1.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #995607)
+
+ -- Kentaro Hayashi <kenhys@xdump.org>  Fri, 17 Dec 2021 20:05:02 +0900

@@ -1,0 +1,11 @@
+Tests: build
+Depends: build-essential, pkg-config, libfreeaptx-dev
+Restrictions: allow-stderr superficial
+
+Test-Command: sox /usr/share/sounds/alsa/Noise.wav -t raw -r 44.1k -L -e s -b 24 -c 2 - | freeaptxenc > $AUTOPKGTEST_TMP/sample.aptx; freeaptxdec < $AUTOPKGTEST_TMP/sample.aptx | sox -t raw -r 44.1k -L -e s -b 24 -c 2 - $AUTOPKGTEST_TMP/sample.wav
+Depends: alsa-utils, freeaptx-utils, sox
+Features: test-name=encore_decode
+
+Test-Command: sox /usr/share/sounds/alsa/Noise.wav -t raw -r 44.1k -L -e s -b 24 -c 2 - | freeaptxenc --hd > $AUTOPKGTEST_TMP/sample.aptx; freeaptxdec --hd < $AUTOPKGTEST_TMP/sample.aptx | sox -t raw -r 44.1k -L -e s -b 24 -c 2 - $AUTOPKGTEST_TMP/sample.wav
+Depends: alsa-utils, freeaptx-utils, sox
+Features: test-name=encore_decode_hd
