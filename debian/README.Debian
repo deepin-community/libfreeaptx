@@ -1,0 +1,13 @@
+libfreeaptx for Debian
+---------------------
+
+libfreeaptx is based on version 0.2.0 of libopenaptx with the intent of
+continuing under a free license without the additional license restriction added to
+libopenaptx 0.2.1.
+
+libopenaptx is already orphaned in Debian [1], and pipewire doesn't support it
+anymore, we need to package libfreeaptx.
+
+[1] https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=993601
+
+ -- Kentaro Hayashi <kenhys@xdump.org>  Fri, 15 Oct 2021 20:50:27 +0900
