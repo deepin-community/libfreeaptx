@@ -1,3 +1,11 @@
+libfreeaptx (0.2.2-1) unstable; urgency=medium
+
+  * New upstream version 0.2.2
+  * d/control
+    - Bump Standards-Version to 4.7.2. No changes are required.
+
+ -- Kentaro Hayashi <kenhys@xdump.org>  Thu, 06 Mar 2025 22:30:35 +0900
+
 libfreeaptx (0.1.1-2) unstable; urgency=medium
 
   [ Sebastien Bacher ]

@@ -20,8 +20,8 @@ PKGDIR = $(LIBDIR)/pkgconfig
 
 NAME = freeaptx
 MAJOR = 0
-MINOR = 1
-PATCH = 1
+MINOR = 2
+PATCH = 2
 
 LIBNAME = lib$(NAME).so
 SONAME = $(LIBNAME).$(MAJOR)
