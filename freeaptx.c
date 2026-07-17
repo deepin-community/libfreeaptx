@@ -2,7 +2,7 @@
  * Open Source implementation of Audio Processing Technology codec (aptX)
  * Copyright (C) 2017       Aurelien Jacobs <aurel@gnuage.org>
  * Copyright (C) 2018-2020  Pali Rohár <pali.rohar@gmail.com>
- * Copyright (C) 2021       Hunter Wardlaw <wardlawhunter@gmail.com>
+ * Copyright (C) 2025       Hunter Wardlaw <wardlawhunter@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -1090,9 +1090,9 @@ static void aptx_reset_decode_sync(struct aptx_context *ctx)
 }
 
 
-const int aptx_major = freeaptx_MAJOR;
-const int aptx_minor = freeaptx_MINOR;
-const int aptx_patch = freeaptx_PATCH;
+const int aptx_major = FREEAPTX_MAJOR;
+const int aptx_minor = FREEAPTX_MINOR;
+const int aptx_patch = FREEAPTX_PATCH;
 
 struct aptx_context *aptx_init(int hd)
 {

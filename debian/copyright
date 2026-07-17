@@ -6,11 +6,11 @@ Source: https://github.com/iamthehorker/libfreeaptx
 Files: *
 Copyright: 2017 Aurelien Jacobs <aurel@gnuage.org>
  2018-2020  Pali Rohár <pali.rohar@gmail.com>
- 2021 Hunter Wardlaw <wardlawhunter@gmail.com>
+ 2025 Hunter Wardlaw <wardlawhunter@gmail.com>
 License: LGPL-2.1+
 
 Files: debian/*
-Copyright: 2021-2022 Kentaro Hayashi <kenhys@xdump.org>
+Copyright: 2021-2025 Kentaro Hayashi <kenhys@xdump.org>
 License: GPL-2+
 
 License: LGPL-2.1+

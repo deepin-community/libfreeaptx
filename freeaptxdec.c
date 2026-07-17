@@ -1,7 +1,7 @@
 /*
  * aptX decoder utility
  * Copyright (C) 2018-2020  Pali Rohár <pali.rohar@gmail.com>
- * Copyright (C) 2021       Hunter Wardlaw <wardlawhunter@gmail.com>
+ * Copyright (C) 2025       Hunter Wardlaw <wardlawhunter@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
     for (i = 1; i < argc; ++i) {
         if (strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--help") == 0) {
-            fprintf(stderr, "aptX decoder utility %d.%d.%d (using libfreeaptx %d.%d.%d)\n", freeaptx_MAJOR, freeaptx_MINOR, freeaptx_PATCH, aptx_major, aptx_minor, aptx_patch);
+            fprintf(stderr, "aptX decoder utility %d.%d.%d (using libfreeaptx %d.%d.%d)\n", FREEAPTX_MAJOR, FREEAPTX_MINOR, FREEAPTX_PATCH, aptx_major, aptx_minor, aptx_patch);
             fprintf(stderr, "\n");
             fprintf(stderr, "This utility decodes aptX or aptX HD audio stream\n");
             fprintf(stderr, "from stdin to a raw 24 bit signed stereo on stdout\n");

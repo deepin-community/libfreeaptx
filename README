@@ -1,9 +1,9 @@
-### libfreeaptx
+### This project is in maintenance mode!
 
-libfreeaptx is based on version 0.2.0 of libopenaptx with the intent of continuing
-under a free license without the additional license restriction added to 0.2.1. The
-initial version of libfreeaptx was reset to 0.1.0 to prevent confusion between the
-two projects. 
+I forked this from libopenaptx 0.2.0 after a problematic licensing change 
+upstream in 0.2.1. This project is in maintenance mode.
+
+### libfreeaptx
 
 This is Open Source implementation of Audio Processing Technology codec (aptX)
 derived from ffmpeg 4.0 project and licensed under LGPLv2.1+. This codec is
